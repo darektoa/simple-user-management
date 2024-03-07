@@ -30,3 +30,11 @@ Application for simple user management. Using **Laravel** + **React**
 -   And run `pnpm run build` in your terminal for build the react views
 -   If you want to change the react view, please run `pnpm run dev` in your second terminal
 -   Voila! your project is ready to use
+
+## Demo Account
+
+Demo Account for sign-in to dashboard
+
+| Email | Password |
+| :---  |   :---   |
+| admin@example.com | password |
