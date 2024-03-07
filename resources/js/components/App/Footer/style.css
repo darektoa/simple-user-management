@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .app__footer {
+        @apply flex
+            min-h-[80px]
+            w-full
+            justify-center
+            bg-white
+            shadow-xl
+            shadow-black;
+    }
+
+    .app__footer .container {
+        @apply flex
+            w-full
+            items-center;
+    }
+
+    .app__footer__copyright {
+        @apply text-base
+            text-gray-400;
+    }
+
+    .app__footer__nav-menu {
+        @apply ml-auto;
+    }
+}

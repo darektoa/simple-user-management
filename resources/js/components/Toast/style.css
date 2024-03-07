@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .toast-component {
+        @apply fixed
+        right-5
+        top-5
+        z-50
+        max-w-md
+        rounded-xl
+        bg-white
+        px-7
+        py-5
+        shadow-2xl
+        transition-all
+        duration-300;
+    }
+
+    .toast-component--hide {
+        @apply -right-full;
+    }
+}

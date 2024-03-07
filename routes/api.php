@@ -1,19 +1,33 @@
 <?php
 
+namespace App\Http\Controllers\Api;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+/**
+ * AUTHENTICATION
+ */
+Route::post('/sign-in', [Auth\SignInController::class, 'store'])->name('signIn.post');
+Route::post('/sign-up', [Auth\SignUpController::class, 'store'])->name('signUp.post');
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
-*/
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+/**
+ * WITH AUTHENTICATION
+ */
+Route::middleware(['auth:sanctum'])->group(function() {
+    Route::post('/sign-out', [Auth\SignOutController::class, 'store'])->name('signOut');
+    Route::get('/summary', [HomeController::class, 'index'])->name('dashboard');
+        
+    /**
+     * USERS
+     */
+    Route::prefix('/users')->name('users')->group(function() {
+        Route::get('/', [UserController::class, 'index']);
+        Route::post('/', [UserController::class, 'store']);
+        
+        Route::prefix('/{userId}')->group(function() {
+            Route::patch('/', [UserController::class, 'update']);
+            Route::delete('/', [UserController::class, 'destroy']);
+        });
+    });
 });

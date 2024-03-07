@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .switchComponent {
+        @apply mx-2
+            flex
+            h-8
+            w-14
+            rounded-full
+            border
+            border-gray-500/50
+            bg-gray-500/20
+            p-1
+            transition-all
+            cursor-pointer;
+    }
+
+    .switchComponent.disabled {
+        @apply cursor-not-allowed;
+    }
+
+    .switchComponent--active {
+        @apply border-green-500/50
+            bg-green-500/20;
+    }
+
+    .switchComponent__thumb {
+        @apply ml-0
+            h-full
+            w-[50%]
+            rounded-full
+            bg-gray-500
+            transition-all;
+    }
+
+    .switchComponent__thumb--active {
+        @apply ml-[50%]
+            bg-green-500;
+    }
+}

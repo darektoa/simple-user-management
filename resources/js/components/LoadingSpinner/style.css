@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .loadingSpinnerComponent {
+        @apply flex
+            h-full
+            w-full
+            items-start
+            justify-center;
+    }
+
+    .loadingSpinnerComponent__spinnerBox {
+        @apply flex
+            h-full
+            max-h-80
+            w-full
+            items-center
+            justify-center;
+    }
+}

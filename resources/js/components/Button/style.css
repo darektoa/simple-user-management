@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .button-component {
+        @apply rounded-lg
+        bg-white 
+        px-6
+        py-2
+        font-medium
+        shadow-lg
+        transition-all
+        hover:ring-4;
+    }
+
+    .button-component.disabled {
+        @apply cursor-not-allowed
+            bg-black/15
+            stroke-black/25
+            text-black/25
+            hover:ring-0;
+    }
+}

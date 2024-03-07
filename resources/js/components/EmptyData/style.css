@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .empty-data-component {
+        @apply flex
+            h-full
+            w-full
+            items-center
+            justify-center;
+    }
+
+    .empty-data-component__text {
+        @apply text-center
+            text-2xl
+            text-gray-700;
+    }
+}

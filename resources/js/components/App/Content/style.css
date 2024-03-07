@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .app__content {
+        @apply grid
+            h-full
+            grow
+            grid-cols-12
+            gap-x-6
+            overflow-y-auto
+            px-6
+            my-3
+            scroll-pt-48;
+    }
+}
