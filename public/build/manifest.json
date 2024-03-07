@@ -1,0 +1,49 @@
+{
+  "resources/css/global.css": {
+    "file": "assets/global-D_lSbTkW.css",
+    "src": "resources/css/global.css",
+    "isEntry": true
+  },
+  "resources/js/App.tsx": {
+    "file": "assets/App-DA8najrN.js",
+    "src": "resources/js/App.tsx",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/routes/Routes.tsx"
+    ]
+  },
+  "resources/js/assets/fonts/open-sans/OpenSans-Bold.woff2": {
+    "file": "assets/OpenSans-Bold-DW-u3yVS.woff2",
+    "src": "resources/js/assets/fonts/open-sans/OpenSans-Bold.woff2"
+  },
+  "resources/js/assets/fonts/open-sans/OpenSans-Light.woff2": {
+    "file": "assets/OpenSans-Light-CX7ruI15.woff2",
+    "src": "resources/js/assets/fonts/open-sans/OpenSans-Light.woff2"
+  },
+  "resources/js/assets/fonts/open-sans/OpenSans-Regular.woff2": {
+    "file": "assets/OpenSans-Regular-BVErVfqW.woff2",
+    "src": "resources/js/assets/fonts/open-sans/OpenSans-Regular.woff2"
+  },
+  "resources/js/assets/fonts/open-sans/OpenSans-SemiBold.woff2": {
+    "file": "assets/OpenSans-SemiBold-CHiljRvi.woff2",
+    "src": "resources/js/assets/fonts/open-sans/OpenSans-SemiBold.woff2"
+  },
+  "resources/js/assets/images/brand-logo.png": {
+    "file": "assets/brand-logo-zlHvP_Hw.png",
+    "src": "resources/js/assets/images/brand-logo.png"
+  },
+  "resources/js/routes/Routes.tsx": {
+    "file": "assets/Routes-B-EuQc6p.js",
+    "src": "resources/js/routes/Routes.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/App.tsx"
+    ],
+    "css": [
+      "assets/Routes-Dr7QBpZE.css"
+    ],
+    "assets": [
+      "assets/brand-logo-zlHvP_Hw.png"
+    ]
+  }
+}
